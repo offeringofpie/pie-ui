@@ -5,11 +5,29 @@
   "description": "A short description of your UI theme",
   "keywords": [
     "ui",
-    "theme"
+    "theme",
+    "dark"
   ],
-  "repository": "https://github.com/atom-community/ui-theme-template",
+  "repository": "https://github.com/offeringofpie/pie-ui.git",
+  "author": {
+    "name": "J Lopes",
+    "email": "mail@jlopes.eu",
+    "url": "https://www.jlopes.eu"
+  },
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.0.0"
+  },
+  "main": "lib/main",
+  "configSchema": {
+    "fontSize": {
+      "title": "Font Size",
+      "description": "Change the font size for the UI.",
+      "type": "integer",
+      "default": 12,
+      "enum": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+      "order": 1
+    }
   }
+
 }

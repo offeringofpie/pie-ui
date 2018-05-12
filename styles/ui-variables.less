@@ -1,94 +1,84 @@
-
 // UI Variables
 // -------------------
-
 // These are the official UI variables that every UI theme should define.
 // It allows other packages to match your theme.
-
 // Overrides: atom/static/variables/ui-variables.less
-
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
-
-
 // Text Colors
-@text-color:           hsl(0,0%,55%);
-@text-color-subtle:    hsl(0,0%,35%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color: hsl(0, 0%, 55%);
+@text-color-subtle: darken(@text-color, 10%);
+@text-color-highlight: lighten(@text-color, 10%);
+@text-color-selected: hsl(0, 0%, 100%);
 
-@text-color-info:    hsl(219,  79%, 66%);
-@text-color-success: hsl(140,  60%, 62%);
-@text-color-warning: hsl( 30,  75%, 72%);
-@text-color-error:   hsla(  9, 100%, 64%, 75%);
+@text-color-info: hsl(220, 75%, 66%);
+@text-color-success: hsl(140, 60%, 62%);
+@text-color-warning: hsl(30, 75%, 72%);
+@text-color-error: hsla(9, 100%, 64%, 75%);
 
 // Background colors
-@background-color-info:    hsl(208, 100%, 50%);
-@background-color-success: hsl(160,  70%, 36%);
-@background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
-
+@background-color-info: hsl(208, 100%, 50%);
+@background-color-success: hsl(160, 70%, 36%);
+@background-color-warning: hsl(32, 60%, 50%);
+@background-color-error: hsl(0, 70%, 50%);
 @background-color-highlight: lighten(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 15%);
-@app-background-color:       @background-color-highlight;
+@background-color-selected: lighten(@base-background-color, 15%);
+@app-background-color: @background-color-highlight;
 
 // Base colors
 @base-background-color: hsl(222,6%,5%);
-@base-border-color:     @base-background-color;
+@base-border-color: @base-background-color;
 
 // Component colors
 @pane-item-background-color: @base-background-color;
-@pane-item-border-color:     @base-border-color;
+@pane-item-border-color: @base-border-color;
 
 @input-background-color: lighten(@app-background-color, 5%);
-@input-border-color:     @base-border-color;
+@input-border-color: @base-border-color;
 
 @tool-panel-background-color: @base-background-color;
-@tool-panel-border-color:     @base-border-color;
+@tool-panel-border-color: @base-border-color;
 
 @inset-panel-background-color: lighten(@base-background-color, 4%);
-@inset-panel-border-color:     @base-border-color;
+@inset-panel-border-color: @base-border-color;
 
 @panel-heading-background-color: lighten(@base-background-color, 4%);
-@panel-heading-border-color:     @base-border-color;
+@panel-heading-border-color: @base-border-color;
 
 @overlay-background-color: lighten(@base-background-color, 5%);
-@overlay-border-color:     @base-border-color;
+@overlay-border-color: @base-border-color;
 
-@button-background-color:          lighten(@base-background-color, 10%);
-@button-background-color-hover:    lighten(@button-background-color, 12%);
+@button-background-color: lighten(@base-background-color, 10%);
+@button-background-color-hover: lighten(@button-background-color, 12%);
 @button-background-color-selected: @button-background-color-hover;
-@button-border-color:              @base-border-color;
+@button-border-color: @base-border-color;
 
-@tab-bar-background-color:    @base-background-color;
-@tab-bar-border-color:        @tab-bar-background-color;
-@tab-background-color:        @tab-bar-background-color;
+@tab-bar-background-color: @base-background-color;
+@tab-bar-border-color: @tab-bar-background-color;
+@tab-background-color: @tab-bar-background-color;
 @tab-background-color-active: @tab-bar-background-color;
-@tab-border-color:            @tab-bar-background-color;
+@tab-border-color: @tab-bar-background-color;
 
 @tree-view-background-color: @app-background-color;
-@tree-view-border-color:     @app-background-color;
+@tree-view-border-color: @app-background-color;
 
 // Site colors
 @ui-site-color-1: hsl(208, 100%, 50%); // blue
 @ui-site-color-2: hsl(160, 70%, 42%); // green
 @ui-site-color-3: hsl(32, 60%, 50%); // orange
-@ui-site-color-4: #d831b0;             // pink
-@ui-site-color-5: #ebdd5b;             // yellow
+@ui-site-color-4: #d831b0; // pink
+@ui-site-color-5: #ebdd5b; // yellow
 
 // Sizes
 @font-size: 12px;
 @input-font-size: 14px;
-
 @disclosure-arrow-size: 12px;
-
 @component-padding: 10px;
 @component-icon-padding: 5px;
 @component-icon-size: 16px;
 @component-line-height: 25px;
-
 @tab-height: 30px;
-
 // Misc
 @component-border-radius: 2px;
-@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@ui-theme-name: 'pie-ui';
