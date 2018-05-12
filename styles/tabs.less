@@ -11,8 +11,9 @@
     line-height: @tab-height;
     height: @tab-height;
     color: @text-color;
-    border-right: 1px solid @tab-border-color;
     background-color: @tab-background-color;
+    border-top: 1px solid @tab-border-color;
+    transition: 0.2s all ease-in-out;
 
     .close-icon {
       transform: scale(0);
@@ -36,18 +37,22 @@
       }
     }
 
-    &:hover {
-      .close-icon {
-        transform: scale(1);
-      }
+    &.active {
+      border-top-color: @text-color-selected;
     }
 
-    &.active {
+    &.active,
+    &:hover {
       color: @text-color-selected;
       background-color: @tab-background-color-active;
 
-      .close-icon:hover {
+      .close-icon {
         color: @text-color;
+        transform: scale(1);
+
+        &:hover {
+          color: @text-color-selected;
+        }
       }
     }
 

@@ -11,7 +11,7 @@
       color: @text-color-selected;
       background-color: @background-color-selected;
 
-      &:before {
+      &::before {
         display: none;
       }
     }
@@ -21,16 +21,23 @@
 .list-tree {
   color: @text-color;
 
-  &.has-collapsable-children .list-nested-item {
-    & > .list-item {
-      transition: 0.2s all ease-in-out;
+  &.has-collapsable-children {
+    li.list-item {
+      margin-left: 0;
+    }
 
-      &::before {
-        position: absolute;
-        left: auto;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
+    .list-nested-item {
+      & > .list-item {
+        transition: 0.2s all ease-in-out;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          left: auto !important;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
   }
@@ -54,10 +61,11 @@
 
 .select-list.popover-list {
   @popover-list-padding: @component-padding/2;
+
   padding: @popover-list-padding;
   border-radius: @component-border-radius;
   background-color: @overlay-background-color;
-  box-shadow: 0 2px 8px 1px hsla(0,0%,0%,.3);
+  box-shadow: 0 2px 8px 1px hsla(0, 0%, 0%, 0.3);
 
   .list-group {
     margin-top: @popover-list-padding;

@@ -1,12 +1,16 @@
-atom-dock {
-  &.bottom {
-    box-shadow: 0 -8px 50px -20px @tab-background-color;
-  }
+.atom-dock-resize-handle {
+  background-color: @app-background-color;
 }
 
+.no-title-bar:not(.fullscreen).custom-title-bar > atom-workspace atom-panel-container.right {
+  margin-top: 0;
+}
 
-.atom-dock-resize-handle {
-  &.bottom {
-    height: 0;
+atom-panel-container {
+  &.bottom,
+  &.right {
+    .atom-dock-resize-handle {
+      background-color: @base-background-color;
+    }
   }
 }

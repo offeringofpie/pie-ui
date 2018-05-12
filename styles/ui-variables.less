@@ -13,7 +13,7 @@
 
 // Text Colors
 @text-color:           hsl(0,0%,55%);
-@text-color-subtle:    hsl(0,0%,45%);
+@text-color-subtle:    hsl(0,0%,35%);
 @text-color-highlight: hsl(0,0%,94%);
 @text-color-selected:  hsl(0,0%,100%);
 
@@ -30,11 +30,11 @@
 
 @background-color-highlight: lighten(@base-background-color, 5%);
 @background-color-selected:  lighten(@base-background-color, 15%);
-@app-background-color:       @base-background-color;
+@app-background-color:       @background-color-highlight;
 
 // Base colors
 @base-background-color: hsl(222,6%,5%);
-@base-border-color:     darken(@base-background-color, 8%);
+@base-border-color:     @base-background-color;
 
 // Component colors
 @pane-item-background-color: @base-background-color;
@@ -61,10 +61,10 @@
 @button-border-color:              @base-border-color;
 
 @tab-bar-background-color:    @base-background-color;
-@tab-bar-border-color:        @base-border-color;
+@tab-bar-border-color:        @tab-bar-background-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 8%);
-@tab-border-color:            @base-border-color;
+@tab-background-color-active: @tab-bar-background-color;
+@tab-border-color:            @tab-bar-background-color;
 
 @tree-view-background-color: @app-background-color;
 @tree-view-border-color:     @app-background-color;

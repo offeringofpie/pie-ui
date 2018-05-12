@@ -16,7 +16,7 @@
   }
 
   [is=tree-view-file] {
-    &[class*=status] {
+    &[class*=status]:not(.status-ignored) {
       .name {
         &::after {
           content: ' \2022';
