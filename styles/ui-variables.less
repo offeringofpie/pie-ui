@@ -12,15 +12,15 @@
 
 
 // Text Colors
-@text-color:           hsl(0,0%,66%);
-@text-color-subtle:    hsl(0,0%,50%);
+@text-color:           hsl(0,0%,55%);
+@text-color-subtle:    hsl(0,0%,45%);
 @text-color-highlight: hsl(0,0%,94%);
 @text-color-selected:  hsl(0,0%,100%);
 
 @text-color-info:    hsl(219,  79%, 66%);
-@text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
-@text-color-error:   hsl(  9, 100%, 64%);
+@text-color-success: hsl(140,  60%, 62%);
+@text-color-warning: hsl( 30,  75%, 72%);
+@text-color-error:   hsla(  9, 100%, 64%, 75%);
 
 // Background colors
 @background-color-info:    hsl(208, 100%, 50%);
@@ -29,18 +29,18 @@
 @background-color-error:   hsl(0,    70%, 50%);
 
 @background-color-highlight: lighten(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
+@background-color-selected:  lighten(@base-background-color, 15%);
+@app-background-color:       @base-background-color;
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
+@base-background-color: hsl(222,6%,5%);
 @base-border-color:     darken(@base-background-color, 8%);
 
 // Component colors
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color:     @base-border-color;
 
-@input-background-color: @app-background-color;
+@input-background-color: lighten(@app-background-color, 5%);
 @input-border-color:     @base-border-color;
 
 @tool-panel-background-color: @base-background-color;
@@ -63,18 +63,18 @@
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color-active: lighten(@tab-bar-background-color, 8%);
 @tab-border-color:            @base-border-color;
 
-@tree-view-background-color: @base-background-color;
-@tree-view-border-color:     @base-border-color;
+@tree-view-background-color: @app-background-color;
+@tree-view-border-color:     @app-background-color;
 
 // Site colors
 @ui-site-color-1: hsl(208, 100%, 50%); // blue
-@ui-site-color-2: hsl(160,  70%, 42%); // green
-@ui-site-color-3: hsl(32,   60%, 50%); // orange
-@ui-site-color-4: #D831B0;             // pink
-@ui-site-color-5: #EBDD5B;             // yellow
+@ui-site-color-2: hsl(160, 70%, 42%); // green
+@ui-site-color-3: hsl(32, 60%, 50%); // orange
+@ui-site-color-4: #d831b0;             // pink
+@ui-site-color-5: #ebdd5b;             // yellow
 
 // Sizes
 @font-size: 12px;

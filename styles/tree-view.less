@@ -1,10 +1,7 @@
-
 // Tree View
 // -------------------
-
 // Used to explore and open files in the current project.
 // Overrides: atom/tree-view
-
 
 .tree-view-resizer {
   border-right: 1px solid @base-border-color;
@@ -16,5 +13,15 @@
 
   .list-item.selected {
     color: @text-color-selected;
+  }
+
+  [is=tree-view-file] {
+    &[class*=status] {
+      .name {
+        &::after {
+          content: ' \2022';
+        }
+      }
+    }
   }
 }
