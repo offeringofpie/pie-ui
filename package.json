@@ -20,6 +20,12 @@
   },
   "main": "lib/main",
   "configSchema": {
+    "color": {
+      "title": "Accent color",
+      "description":"change the accent color used",
+      "type": "color",
+      "default": "white"
+    },
     "fontSize": {
       "title": "Font Size",
       "description": "Change the font size for the UI.",

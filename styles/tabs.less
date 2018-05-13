@@ -38,20 +38,21 @@
     }
 
     &.active {
-      border-top-color: @text-color-selected;
+      border-top-color: @text-color-accent;
     }
 
     &.active,
     &:hover {
-      color: @text-color-selected;
+      color: @text-color-accent;
       background-color: @tab-background-color-active;
 
       .close-icon {
-        color: @text-color;
+        color: @text-color-accent;
+        opacity: 0.5;
         transform: scale(1);
 
         &:hover {
-          color: @text-color-selected;
+          opacity: 1;
         }
       }
     }

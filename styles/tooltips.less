@@ -1,21 +1,50 @@
-
 // Tooltips
 // -------------------
-
 // Overrides: Bootstrap's `.tooltip`.
-
-
 .tooltip {
   .tooltip-inner {
+    background-color: @background-color-selected;
     line-height: 1;
-    padding: .75em;
+    padding: 0.75em;
     white-space: nowrap;
     max-width: none;
   }
 
+  &.top .tooltip-arrow {
+    border-top-color: @background-color-selected;
+  }
+
+  &.top-left .tooltip-arrow {
+    border-top-color: @background-color-selected;
+  }
+
+  &.top-right .tooltip-arrow {
+    border-top-color: @background-color-selected;
+  }
+
+  &.right .tooltip-arrow {
+    border-right-color: @background-color-selected;
+  }
+
+  &.left .tooltip-arrow {
+    border-left-color: @background-color-selected;
+  }
+
+  &.bottom .tooltip-arrow {
+    border-bottom-color: @background-color-selected;
+  }
+
+  &.bottom-left .tooltip-arrow {
+    border-bottom-color: @background-color-selected;
+  }
+
+  &.bottom-right .tooltip-arrow {
+    border-bottom-color: @background-color-selected;
+  }
+
   .keystroke {
-    padding: .15em .4em;
-    margin: 0 -.3em 0 .25em;
+    padding: 0.15em 0.4em;
+    margin: 0 -0.3em 0 0.25em;
     border-radius: max(2px, @component-border-radius / 2);
     color: @text-color-selected;
     background: @background-color-selected;
