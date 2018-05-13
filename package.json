@@ -25,7 +25,7 @@
       "title": "Accent color",
       "description": "change the accent color used",
       "type": "color",
-      "default": "white"
+      "default": "rgba(255, 212, 121, 1)"
     },
     "fontSize": {
       "title": "Font Size",

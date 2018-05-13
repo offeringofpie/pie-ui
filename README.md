@@ -1,5 +1,6 @@
 # Pie UI Theme
-
+![Version](https://img.shields.io/apm/v/pie-ui.svg)
+![License](https://img.shields.io/apm/l/pie-ui.svg)
 
 Dark UI theme to complement its sister syntax theme.
 
