@@ -1,3 +1,5 @@
+@import "syntax-variables";
+
 // UI Variables
 // -------------------
 // These are the official UI variables that every UI theme should define.
@@ -6,7 +8,7 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 // Text Colors
-@text-color: hsl(0, 0%, 55%);
+@text-color: @syntax-text-color;
 @text-color-subtle: darken(@text-color, 25%);
 @text-color-highlight: hsl(0, 0%, 65%);
 @text-color-selected: hsl(0, 0%, 100%);
@@ -27,30 +29,30 @@
 @app-background-color: @background-color-highlight;
 
 // Base colors
-@base-background-color: hsl(222, 6%, 5%);
+@base-background-color: @syntax-background-color;
 @base-border-color: @base-background-color;
 
 // Component colors
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color: @base-border-color;
 
-@input-background-color: lighten(@app-background-color, 5%);
+@input-background-color: lighten(@app-background-color, 10%);
 @input-border-color: @base-border-color;
 
 @tool-panel-background-color: @base-background-color;
 @tool-panel-border-color: @base-border-color;
 
 @inset-panel-background-color: lighten(@base-background-color, 4%);
-@inset-panel-border-color: @base-border-color;
+@inset-panel-border-color: @inset-panel-background-color;
 
 @panel-heading-background-color: lighten(@base-background-color, 4%);
-@panel-heading-border-color: @base-border-color;
+@panel-heading-border-color: @panel-heading-background-color;
 
 @overlay-background-color: lighten(@base-background-color, 5%);
-@overlay-border-color: @base-border-color;
+@overlay-border-color: @overlay-background-color;
 
 @button-background-color: lighten(@base-background-color, 10%);
-@button-background-color-hover: lighten(@button-background-color, 12%);
+@button-background-color-hover: darken(@button-background-color, 5%);
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color: @base-border-color;
 
